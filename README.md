@@ -35,7 +35,7 @@ It automatically saves each reel with a unique index (reel1.mp4, reel2.mp4, …)
 
 Clone the repo
 
-git clone https://github.com/ganesh-sonune77/Instagram-Reels-Downloader.git
+git clone https://github.com/Ganesh-Sonune77/Instagram-Reels-Downloader.git
 cd reels-downloader
 
 
@@ -85,4 +85,4 @@ Python 3.8+
 
 📜 License
 
-MIT License © 2025 Ganesh Sonune
+MIT License © 2025 Ganesh-Sonune77
