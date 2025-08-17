@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Instagram Reel Downloader</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body class="bg-dark text-light">
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">🎥 Instagram Reel Downloader</h1>
+        <form method="POST" class="text-center">
+            <textarea name="insta_url" class="form-control mb-3" rows="4" placeholder="Paste one or more Instagram URLs (each on a new line)" required></textarea>
+            <button type="submit" class="btn btn-success">Download Reels</button>
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ category }} mt-3">{{ message }}</div>
+                {% endfor %}
+            {% endwith %}
+        </form>
+    </div>
+</body>
+</html>
